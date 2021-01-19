@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Марина Горелова](https://up.htmlacademy.ru/htmlcss/30/user/1705077).
-* Наставник: Анна Рус.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf)
 
 ---
 
