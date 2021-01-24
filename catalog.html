@@ -1,0 +1,200 @@
+!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header> <!--как и в файле catalog-->
+           <nav>
+             <a>
+               <img src="img" alt="Логотип студии Nёрд's">
+             </a>
+             <ul>
+               <li><a href="blank.html">Cтудия</a></li>
+               <li><a href="blank.html">Клиенты</a></li>
+               <li><a href="blank.html">Магазин</a></li>
+               <li><a href="blank.html">Контакты</a></li>    
+             </ul>
+             <a href="blank.html">Корзина</a> <!--надо вставить кнопку корзинки-->
+           </nav>  
+    </header>
+        <main>
+            <h1>Примеры страниц</h1>
+            <section>
+                <h2>Фильтр товаров</h2> <!--блок фильтров слева-->
+                <form method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                      <legend>Стоимость:</legend> <!--бегунок не закончен-->
+                      <input type="range" name="cost" min="0" max="15000" value="100" class="slider" id="myCost">
+                    <!--тут должен быть фильтр ОТ ДО  не разобралась как-->
+                    </fieldset>
+                    <fieldset> <!--список фильтров Сетка (одна кнопка выбора)-->
+                      <legend>Сетка:</legend>
+                      <ul>
+                        <li><!--адаптивная-->
+                            <input type="radio" name="grid" value="adaptive" id="filter-adaptive">
+                        <label for="filter-adaptive">Адаптивная</label>
+                        </li>
+                        <li><!--Фиксированная-->
+                            <input type="radio" name="grid" value="fixid" id="filter-fixed"chacked>
+                        <label for="filter-fixed">Фиксированная</label>
+                        </li>
+                        <li><!--Резиновая-->
+                            <input type="radio" name="grid" value="rubber" id="filter-rubber">
+                        <label for="filter-rubber">Резиновая</label>
+                        </li>
+                       <ul>
+                    </fieldset>
+                    <fieldset><!--список фильтров Особенности (несколько вариантов выбора)-->
+                        <legend>Особенности:</legend><!--почему-то не ставит галки слайдер и корзина-->
+                        <ul>
+                            <li>
+                              <input type="trait" name="slider" id="filter-slider" checked>
+                              <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li>
+                                <input type="trait" name="block" id="filter-block">
+                                <label for="filter-block">Блок преимуществ</label>
+                            </li>
+                            <li>
+                                <input type="trait" name="news" id="filter-news">
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li>
+                                <input type="trait" name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li>
+                                <input type="trait" name="crate" id="filter-crate" checked>
+                                <label for="filter-crate">Корзина</label>
+                            </li>
+                        <ul>
+                      </fieldset>
+                    <button type="submit">Показать</button>
+                  </form>
+            </section>
+            <section><!--блок сортировать не поняла как вставить блок сортировки-->
+                <h2>СОРТИРОВАТЬ:</h2>
+                <ul>
+                    <li>
+                       <p><button type="button">ПО ЦЕНЕ</button></p>
+                       <p><button type="button">ПО ТИПУ</button></p>
+                       <p><button type="button">ПО НАЗВАНИЮ</button></p>
+                    </li>
+                </ul>  
+            </section>
+            <section>
+                <h2>Список примеров сайтов</h2>
+                <ul>
+                  <li>
+                    <a href="product.html"> <!--SEDONA пока нет этого файла-->
+                        <h3>Информационный сайт для туристов «SEDONA»</h3><!--надо скрыть заголовок???-->
+                        <p>
+                          <img src="img-sedona 1.jpg" width="359" height="578" 
+                          alt="Информационный сайт для туристов «SEDONA»">
+                        </p>
+                    </a>
+                      <p><button type="button">9 900 руб</button></p>
+                  </li>
+                  <li>
+                    <a href="product.html"> <!--PINK пока нет этого файла-->
+                        <h3>Приложение «PINK»</h3>
+                        <p>
+                          <img src="img-pink 1.jpg" width="359" height="578" 
+                          alt="Приложение «PINK»">
+                        </p>
+                    </a>                     
+                  </li>
+                  <li>
+                    <a href="product.html"> <!--Барбершоп пока нет этого файла-->
+                        <h3>Барбершоп «BORODINSKI»</h3><!--надо скрыть заголовок???-->
+                        <p>
+                          <img src="img-barbershop 1.jpg" width="359" height="578" 
+                          alt="Барбершоп «BORODINSKI»">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="product.html"> <!--MISHKA пока нет этого файла-->
+                        <h3>Милые штучки ручной работы для дома «MISHKA»</h3><!--надо скрыть заголовок???-->
+                        <p>
+                          <img src="img-mishka 1.jpg" width="359" height="578" 
+                          alt="Милые штучки ручной работы для дома «MISHKA»">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="product.html"> <!--A+ пока нет этого файла-->
+                        <h3>Учебный сайт «A+»</h3> <!--надо скрыть заголовок???-->
+                        <p>
+                          <img src="img-aplus 1.jpg" width="359" height="578" 
+                          alt="Учебный сайт «A+»">
+                        </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="product.html"> <!--пока нет этого файла-->
+                        <h3>Крафтовый квас «КВАСТ»</h3><!--надо скрыть заголовок???-->
+                        <p>
+                          <img src="img-kvast 1.jpg" width="359" height="578" 
+                          alt="Крафтовый квас «КВАСТ»">
+                        </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul> <!--постраничная навигация-->
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a>2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">СЛЕДУЮЩАЯ</a>
+                    </li>
+                  </ul>
+            </section>             
+        </main>
+        <footer> <!--как и в файле catalog-->
+            <section>
+              <h2>Как до нас добраться</h2>
+              <!-- Здесь будет карта -->
+              <button type="button">Закрыть</button>
+            </section>
+             <section>
+               <h2>Как связаться</h2><!--заголовок надо скрыть-->
+                <p>Nerd's design studio</p>
+                <p>191186, Санкт-Петербург<br>
+                 ул. Б. Конюшенная, д. 19/8<br>
+                 тел.: <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+                 <a href="blank.html">Напишите нам</a> <!--нужно добавить кнопку как ссылку?-->
+                </p>
+             </section>
+             <section> <!-- блок про скидки и дружбу-->
+              <h2>Скидки друзьям</h2>  
+                  <p>Давайте дружить-это выгодно</p>
+                  <p>Скидка 10% для друзей из соцсетей</p>
+             </section>
+             <section> <!-- блок кнопки на соцсети-->
+                <h2>Ссылка на соцсети</h2><!--Заголовок этот не нужен-->
+                <ul>
+                  <li>
+                    <a href="#">Вконтакте</a>
+                  </li>
+                  <li>
+                    <a href="#">Фейсбук</a>
+                  </li>
+                  <li>
+                    <a href="#">Инстаграм</a>
+                  </li>
+                </ul>   
+              </section>
+             </footer>
+            <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        
+          </body>
+        </html>
