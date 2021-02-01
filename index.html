@@ -3,21 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body>
     <header>
         <nav>
           <a>
-            <img src="img" alt="Логотип студии Nёрд's">
+            <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
-          <ul> class="site-navigation">
+          <ul>
             <li><a href="blank.html">Cтудия</a></li>
             <li><a href="blank.html">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
-          <a href="blank.html">Корзина</a> <!--надо вставить кнопку корзинки-->
+          <ul> <!--картинка корзины должна быть ссылкой?-->
+            <li><a href="blank.html"><img src="img/icon/cart-icon.png" width="15" height="15" alt="Корзина"></a></li>
+            <li><a href="blank.html">Корзина</a></li>
+          </ul>
         </nav>
     </header>
     <main>
@@ -25,25 +32,34 @@
         <h2>Презентации</h2>
           <p>Долго, дорого, скрупулезно</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <p><button type="button">Узнать больше</button></p>   <!--задать цвет потом-->
             <a>
-              <img src="img" alt="телефоны"> <!--картинка с телефонами-->
+              <img src="img/illustration/nerds-index-slide-1.jpg" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
             </a>
-            <button type="button">Узнать больше</button> <!--кнопка Узнать больше-->
       </section>
       <section> <!--блок с веб-сайты. приложения. презентации-->
         <h2 class="visually-hidden">Что мы делаем</h2> <!--скрытый заголовок-->
         <ul>
           <li>
+            <img src="img/illustration/illustration-1.jpg"
+            width="300" height="146" alt="веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним когда увидит ваш сайт</p>
+            <p><button type="button">Заказать</button></p>
           </li>
           <li>
+            <img src="img/illustration/illustration-2.jpg"
+                 width="300" height="146" alt="приложения">
             <h3>Приложения</h3>
              <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+             <p><button type="button">Заказать</button></p>
           </li>
           <li>
+            <img src="img/illustration/illustration-3.jpg"
+                 width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете насколько вы измительны!</p>
+            <p><button type="button">Заказать</button></p>
           </li>
         </ul>
       </section>
@@ -59,7 +75,7 @@
                     <li>Слайд-шоу и видео для корпоративных презентаций</li>
                   </ul>
           <a>
-            <img src="img" alt="Логотип студии Nёрд's"><!--сюда картинка с логотипом-->
+            <img src="img/illustration/nerds-illustration-1.jpg" width="360" height="208" alt="Логотип студии Nёрд's"><!--сюда картинка с логотипом-->
           </a>
           <table>
             <tr>
@@ -72,17 +88,26 @@
       </section>
       <section><!--блок с ссылками и лого компаний-->
           <h2>Наши работы</h2>
-          <a href="blank.html">htmlacademy</a>
-          <a href="blank.html">Бородинский</a>
-          <a href="blank.html">PINK</a>
-          <a href="blank.html">MISHKA</a>
+          <a href="blank.html"><img src="img/icon/logo-Group.png"
+             width="199" height="67.82" alt="htmlacademy">
+          </a>
+          <a href="blank.html"><img src="img/icon/logo-borod.png"
+            width="209" height="90" alt="Бородинский">
+          </a>
+          <a href="blank.html"><img src="img/icon/logo-pink.png"
+            width="185" height="52" alt="Pink">
+          </a>
+          <a href="blank.html"><img src="img/icon/logo-mishka.png"
+            width="173" height="84" alt="Mishka">
+          </a>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Как до нас добраться</h2>
-        <!-- Здесь будет карта -->
-        <button type="button">Закрыть</button>
+        <h2>Как до нас добраться</h2><!-- карта -->
+        <a>
+          <img src="img/illustration/map 1.jpg" width="1440" height="416" alt="карта">
+        </a>
       </section>
       <section>
         <h2 class="visually-hidden">Как связаться</h2><!--скрытый заголовок-->
@@ -90,8 +115,28 @@
           <p>191186, Санкт-Петербург
            ул. Б. Конюшенная, д. 19/8
            тел.: <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-           <a href="blank.html">Напишите нам</a> <!--нужно добавить кнопку как ссылку?-->
+            <a href="blank.html">
+             <button type="button">Напишите нам</button>
+            </a>
           </p>
+      </section>
+      <section>
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="appointment-name"></label>Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
+          </p>
+          <p>
+            <label for="appointment-emal"></label>Ваш email:</label>
+            <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="appointment-letter"></label>Текст письма:</label>
+            <input id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
+          </p>
+          <p><button type="button">Отправить</button></p>
+        </form>
       </section>
       <section> <!-- блок про скидки и дружбу-->
         <h2>Скидки друзьям</h2>
@@ -100,15 +145,15 @@
       </section>
       <section> <!-- блок кнопки на соцсети-->
         <h2 class="visually-hidden">Ссылка на соцсети</h2><!--скрытый заголовок-->
-        <ul>
+        <ul> <!-- ссылки на логотипы пока без серого фона-->
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#">вк<img src="img/icon/vk-icon.svg" width="26.01" height="15" alt="вк"></a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#">фб<img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#">инста<img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
           </li>
         </ul>
       </section>

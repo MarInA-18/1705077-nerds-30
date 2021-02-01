@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <header> <!--как и в файле catalog-->
         <nav>
           <a>
-            <img src="img/nerds-logo.svg" alt="Логотип студии Nёрд's">
+            <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
           <ul>
             <li><a href="blank.html">Cтудия</a></li>
@@ -16,7 +16,10 @@
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
-          <a href="blank.html">Корзина</a> <!--надо вставить кнопку корзинки-->
+          <ul>
+            <li><a href="blank.html"><img src="img/icon/cart-icon.png" width="15" height="15" alt="Корзина"></a></li>
+            <li><a href="blank.html">Корзина</a></li>
+          </ul>
         </nav>
     </header>
         <main>
@@ -25,7 +28,7 @@
                 <h2>Фильтр товаров</h2> <!--блок фильтров слева-->
                 <form method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
-                      <legend>Стоимость:</legend> <!--бегунок не закончен-->
+                      <legend>Стоимость:</legend>
                       <input type="range" name="cost" min="0" max="15000"
                              value="100" class="slider" id="myCost">
                       <table><!--т фильтр ОТ ДО  -->
@@ -95,8 +98,12 @@
                   <li>
                     <a href="blank.html">
                         <h3 class="visually-hidden">Информационный сайт для туристов «SEDONA»</h3><!--скрытый заголовок-->
+                        <div>
+                          <img src="img/products/line-1.png" width="360" height="40"
+                          alt="Линия наведение»">
+                        </div><!--между блоками есть расстрояние. надо убрать как-то-->
                         <p>
-                          <img src="img-sedona-1.jpg" width="359" height="578"
+                          <img src="img/products/img-sedona-1.jpg" width="359" height="578"
                           alt="Информационный сайт для туристов «Sedona»">
                         </p>
                     </a>
@@ -105,8 +112,12 @@
                   <li>
                     <a href="blank.html">
                         <h3 class="visually-hidden">Приложение «Pink»</h3>
+                        <div>
+                          <img src="img/products/line-2.png" width="360" height="40"
+                          alt="Линия покой»">
+                        </div><!--между блоками есть расстрояние. надо убрать как-то-->
                         <p>
-                          <img src="img-pink-1.jpg" width="359" height="578"
+                          <img src="img/products/img-pink-1.jpg" width="359" height="578"
                           alt="Приложение «Pink»">
                         </p>
                     </a>
@@ -114,8 +125,12 @@
                   <li>
                     <a href="blank.html">
                         <h3 class="visually-hidden">Барбершоп «Borodinski»</h3><!--скрытый заголовок-->
+                        <div>
+                          <img src="img/products/line-2.png" width="360" height="40"
+                          alt="Линия покой»">
+                        </div><!--между блоками есть расстрояние. надо убрать как-то-->
                         <p>
-                          <img src="img-barbershop-1.jpg" width="359" height="578"
+                          <img src="img/products/img-barbershop-1.jpg" width="359" height="578"
                           alt="Барбершоп «Borodinski»">
                         </p>
                     </a>
@@ -123,8 +138,12 @@
                   <li>
                     <a href="blank.html">
                         <h3 class="visually-hidden">Милые штучки ручной работы для дома «Mishka»</h3><!--скрытый заголовок-->
+                        <div>
+                          <img src="img/products/line-2.png" width="360" height="40"
+                          alt="Линия покой»">
+                        </div><!--между блоками есть расстрояние. надо убрать как-то-->
                         <p>
-                          <img src="img-mishka-1.jpg" width="359" height="578"
+                          <img src="img/products/img-mishka-1.jpg" width="359" height="578"
                           alt="Милые штучки ручной работы для дома «MIishka»">
                         </p>
                     </a>
@@ -132,8 +151,12 @@
                   <li>
                     <a href="blank.html">
                         <h3 class="visually-hidden">Учебный сайт «A+»</h3> <!--скрытый заголовок-->
+                        <div>
+                          <img src="img/products/line-2.png" width="360" height="40"
+                          alt="Линия покой»">
+                        </div><!--между блоками есть расстрояние. надо убрать как-то-->
                         <p>
-                          <img src="img-aplus-1.jpg" width="359" height="578"
+                          <img src="img/products/img-mishka-1.jpg" width="359" height="578"
                           alt="Учебный сайт «A+»">
                         </p>
                     </a>
@@ -141,8 +164,12 @@
                   <li>
                     <a href="blank.html">
                         <h3 class="visually-hidden">Крафтовый квас «Кваст»</h3><!--скрытый заголовок-->
+                        <div>
+                          <img src="img/products/line-2.png" width="360" height="40"
+                          alt="Линия покой»">
+                        </div><!--между блоками есть расстрояние. надо убрать как-то-->
                         <p>
-                          <img src="img-kvast-1.jpg" width="359" height="578"
+                          <img src="img/products/img-kvast-1.jpg" width="359" height="578"
                           alt="Крафтовый квас «Кваст»">
                         </p>
                     </a>
@@ -166,12 +193,13 @@
         </main>
         <footer> <!--как и в файле index-->
             <section>
-              <h2>Как до нас добраться</h2>
-              <!-- Здесь будет карта -->
-              <button type="button">Закрыть</button>
+              <h2 class="visually-hidden">Как до нас добраться</h2>
+              <a>
+                <img src="img/illustration/map 1.jpg" width="1440" height="416" alt="карта">
+              </a>
             </section>
             <section>
-               <h2>Как связаться</h2><!--заголовок надо скрыть-->
+               <h2 class="visually-hidden">Как связаться</h2><!--заголовок скрытый-->
                 <p>Nerd's design studio</p>
                 <p>191186, Санкт-Петербург
                  ул. Б. Конюшенная, д. 19/8
@@ -185,16 +213,16 @@
                   <p>Скидка 10% для друзей из соцсетей</p>
             </section>
             <section> <!-- блок кнопки на соцсети-->
-                <h2>Ссылка на соцсети</h2><!--Заголовок этот не нужен-->
+                <h2 class="visually-hidden">Ссылка на соцсети</h2><!--Заголовок скрытый-->
                 <ul>
                   <li>
-                    <a href="#">Вконтакте</a>
+                    <a href="#">вк<img src="img/icon/vk-icon.svg" width="26.01" height="15" alt="вк"></a>
                   </li>
                   <li>
-                    <a href="#">Фейсбук</a>
+                    <a href="#">фб<img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
                   </li>
                   <li>
-                    <a href="#">Инстаграм</a>
+                    <a href="#">инста<img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
                   </li>
                 </ul>
             </section>
