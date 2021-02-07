@@ -1,0 +1,179 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weihgt: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weihgt: 700;
+  font-style: normal;
+}
+
+/*Variables*/
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-dark:#444444;
+  --basic-light-dark: #666666;
+  --basic-neutral-dark:#888888;
+  --basic-midnight-grey:#888888;
+  --basic-grey:#A6A6A6;
+  --basic-neutral-light: #EEEEEE;
+  --basic-light: #E1E1E1;
+  --basic-white: #FFFFFF;
+
+   --spesial-1: #EFC849;
+   --spesial-2: #00CA74;
+   --spesial-3: #FB565A;
+   --spesial-4: #E74246;
+   --special-5: #D7373B;
+
+}
+
+/*Global*/
+
+.page-body  {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*main-navigation*/
+
+  .main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-color: var(--basic-neutral-light); /*цвет фона*/
+  }
+
+  .site-navigation,
+  .box-navigation {
+    list-style: none;
+  }
+
+  /* User navigation */
+
+  .site-navigation a,
+  .box-navigation a {
+    color: var(--basic-black);
+  }
+
+  .site-navigation a:hover, /*наведение*/
+  .box-navigation a:hover {
+    color: var(--spesial-3);
+  }
+  .site-navigation a:focus, /*нажатие черный цвет 30% прозрачности*/
+    .box-navigation a:focus {
+      opacity: 0.3;
+  }
+
+  /*work*/
+
+  .work-list {
+    list-style: none;
+ }
+
+  .work-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /*feature*/
+
+  /*Buttons*/
+
+  .button  {
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--spesial-3);
+    border: none;
+    }
+
+    /*.button:hover {  кнопка пропадает при наведении, а должна менять цвет
+      background-color: var(--special-4);
+    }
+
+    .button:focus{
+      opacity: 0.3;
+      background-color: var(--special-5);
+    }*/
+
+    /*.button button-app {  не меняется цвет двух кнопок с этими строками. почему?
+      background-color: var(--spesial-2);
+    }
+    .button button-prsnt {
+      background-color: var(--spesial-1);
+    }*/
+
+
+    /* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+}
+
+  /* Social button */
+
+    .social-list {
+    list-style: none;
+  }
+
+.social-button {
+  color: var(--basic-white);
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-light);
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--spesial-4);

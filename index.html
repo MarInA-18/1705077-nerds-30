@@ -1,75 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/style.css" >
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+
   </head>
 
-  <body>
-    <header>
-        <nav>
-          <a>
+  <body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo"><!--класс для картинки ссылки-->
             <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
-          <ul>
+          <ul class="site-navigation"><!--класс для навигации по сайту-->
             <li><a href="blank.html">Cтудия</a></li>
             <li><a href="blank.html">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
-          <ul>
+          <ul class="box-navigation">
             <li><a href="blank.html"><img src="img/icon/cart-icon.png" width="15" height="15" alt="Корзина"></a></li>
             <li><a href="blank.html">Корзина</a></li>
           </ul>
         </nav>
     </header>
-    <main>
-      <section> <!--блок с картинками телефонов-->
-        <h2>Презентации</h2>
-          <p>Долго, дорого, скрупулезно</p>
+    <main class="container">
+
+      <section class="presentation"> <!--блок с картинками телефонов-->
+        <!--<h2>Презентации</h2>-->
+          <p style="font-size: 55px">Долго, дорого, скрупулезно</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <p><button type="button">Узнать больше</button></p>   <!--задать цвет потом-->
+          <p><button class="button" type="button">Узнать больше</button></p>
             <a>
               <img src="img/illustration/nerds-index-slide-1.jpg" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
             </a>
       </section>
-      <section> <!--блок с веб-сайты. приложения. презентации-->
+
+      <section class="work"> <!--блок с веб-сайты. приложения. презентации-->
         <!--<h2 class="visually-hidden">Что мы делаем</h2> -->
-        <ul>
-          <li>
+        <ul class="work-list">
+          <li class="work-item">
             <img src="img/illustration/illustration-1.jpg"
             width="300" height="146" alt="веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним когда увидит ваш сайт</p>
-            <p><button type="button">Заказать</button></p>
+            <p><button class="button" type="button">Заказать</button></p>
           </li>
-          <li>
+          <li class="work-item">
             <img src="img/illustration/illustration-2.jpg"
                  width="300" height="146" alt="приложения">
             <h3>Приложения</h3>
              <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-             <p><button type="button">Заказать</button></p>
+             <p><button class="button button-app" type="button">Заказать</button></p>
           </li>
-          <li>
+          <li class="work-item">
             <img src="img/illustration/illustration-3.jpg"
                  width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете насколько вы измительны!</p>
-            <p><button type="button">Заказать</button></p>
+            <p><button class="button button-prsnt" type="button">Заказать</button></p>
           </li>
         </ul>
       </section>
-      <section> <!--блок про фирму с цифрами и лого-->
+
+      <section class="feature"> <!--блок про фирму с цифрами и лого-->
         <!--<h2 class="visually-hidden">Кто мы</h2>-->
-          <p>Мы маленькая, но гордая студия из Краснодара</p>
+          <p style="font-size: 45px">Мы маленькая, но гордая студия из Краснодара</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математичесий расчет
             превыше креатива. Работаем, не покладая рук, как роботы.</p>
                 <h3>Выполняем заказы на разработку:</h3>
-                  <ul>
+                  <ul class="feature-item">
                     <li>Веб-сайты различно сложности</li>
                     <li>Мобильные приложния для iOS и Android</li>
                     <li>Слайд-шоу и видео для корпоративных презентаций</li>
@@ -86,8 +92,8 @@
             </tr>
           </table>
       </section>
-      <section><!--блок с ссылками и лого компаний-->
-          <h2>Наши работы</h2>
+      <section class="logo-list"><!--блок с ссылками и лого компаний-->
+          <!--<h2>логотипы компаний</h2>-->
           <a href="blank.html"><img src="img/icon/logo-group.png"
              width="199" height="67" alt="htmlacademy">
           </a>
@@ -102,62 +108,62 @@
           </a>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2>Как до нас добраться</h2><!-- карта -->
+
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <!--<h2>Как до нас добраться</h2>--><!-- карта -->
         <a>
           <img src="img/illustration/map 1.jpg" width="1440" height="416" alt="карта">
         </a>
       </section>
-      <section>
+      <section class="footer-contacts">
         <!--<h2 class="visually-hidden">Как связаться</h2>-->
           <p>Nerd's design studio</p>
           <p>191186, Санкт-Петербург
            ул. Б. Конюшенная, д. 19/8
-           тел.: <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-            <a href="blank.html">
-             <button type="button">Напишите нам</button>
-            </a>
+           тел.: <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+            <a class="button" href="blank.html">Напишите нам</a>
           </p>
-      </section>
-      <section>
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="appointment-name"></label>Ваше имя:</label>
-            <input id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
-          </p>
-          <p>
-            <label for="appointment-emal"></label>Ваш email:</label>
-            <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="appointment-letter"></label>Текст письма:</label>
-            <input id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
-          </p>
-          <p><button type="button">Отправить</button></p>
-        </form>
       </section>
       <section> <!-- блок про скидки и дружбу-->
         <h2>Скидки друзьям</h2>
-            <p>Давайте дружить-это выгодно</p>
+            <p style="font-size: 36px">Давайте дружить-это выгодно</p>
             <p>Скидка 10% для друзей из соцсетей</p>
       </section>
-      <section> <!-- блок кнопки на соцсети-->
-        <h2 class="visually-hidden">Ссылка на соцсети</h2><!--скрытый заголовок-->
-        <ul> <!-- ссылки на логотипы пока без серого фона-->
+      <section class="footer-social"> <!-- блок кнопки на соцсети-->
+        <!--<h2 class="visually-hidden">Ссылка на соцсети</h2>-->
+        <ul class="social-list"> <!-- ссылки на логотипы пока без серого фона-->
           <li>
-            <a href="#">вк<img src="img/icon/vk-icon.svg" width="26" height="15" alt="вк"></a>
+            <a class="social-button" href="#">вк<img src="img/icon/vk-icon.svg" width="26" height="15" alt="вк"></a>
           </li>
           <li>
-            <a href="#">фб<img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
+            <a class="social-button" href="#">фб<img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
           </li>
           <li>
-            <a href="#">инста<img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
+            <a class="social-button" href="#">инста<img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
           </li>
         </ul>
       </section>
     </footer>
+
+    <section class="modal"><!--выпадающее окно для записи-->
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="appointment-name">
+          <label for="appointment-name"></label>Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
+        </p>
+        <p class="appointment-email">
+          <label for="appointment-emal"></label>Ваш email:</label>
+          <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="appointment-letter">
+          <label for="appointment-letter"></label>Текст письма:</label>
+          <input id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
+        </p>
+        <p><button type="button">Отправить</button></p>
+      </form>
+    </section>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
