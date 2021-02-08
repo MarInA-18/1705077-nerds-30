@@ -39,10 +39,14 @@
   --basic-white: #FFFFFF;
 
    --spesial-1: #EFC849;
+   --spesial-1h:#EAB534;
+   --spesial-1f:#E5A722;
    --spesial-2: #00CA74;
+   --spesial-2h:#00BC6C;
+   --spesial-2f:#00AA62;
    --spesial-3: #FB565A;
-   --spesial-4: #E74246;
-   --special-5: #D7373B;
+   --spesial-3h:#E74246;
+   --special-3f:#D7373B;
 
 }
 
@@ -94,10 +98,19 @@
     color: var(--spesial-3);
   }
   .site-navigation a:focus, /*нажатие черный цвет 30% прозрачности*/
-    .box-navigation a:focus {
-      opacity: 0.3;
+  .box-navigation a:focus {
+    opacity: 0.3;
+    color: var(--spesial-3);
   }
 
+  /*presentation*/
+
+  .pass-55 {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
   /*work*/
 
   .work-list {
@@ -108,6 +121,13 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .pass-45 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
     text-transform: uppercase;
   }
 
@@ -128,23 +148,38 @@
     border: none;
     }
 
-    /*.button:hover {  кнопка пропадает при наведении, а должна менять цвет
-      background-color: var(--special-4);
-    }
+  .button a:hover {
+    background-color: var(--special-3h);
+  }
 
-    .button:focus{
-      opacity: 0.3;
-      background-color: var(--special-5);
-    }*/
+  .button a:focus {
+    opacity: 30%;
+    background-color: var(--special-3f);
+  }
 
-    /*.button button-app {  не меняется цвет двух кнопок с этими строками. почему?
-      background-color: var(--spesial-2);
-    }
-    .button button-prsnt {
+  .btn-app {
+    background-color: var(--spesial-2);
+  }
+
+  .btn-app :hover {
+    background-color: var(--special-2h);
+  }
+  .button a:focus {
+    opacity: 30%;
+    background-color: var(--special-2f);
+  }
+
+  .btn-prsnt {
       background-color: var(--spesial-1);
-    }*/
+  }
 
-
+  .btn-prsnt :hover {
+    background-color: var(--special-1h);
+  }
+  .btn-prsnt a:focus {
+    opacity: 30%;
+    background-color: var(--special-1f);
+  }
     /* Contacts */
 
 .contacts-phone {
@@ -162,8 +197,8 @@
 
   /* Social button */
 
-    .social-list {
-    list-style: none;
+.social-list {
+  list-style: none;
   }
 
 .social-button {
@@ -177,3 +212,17 @@
 .social-button:hover,
 .social-button:focus {
   background-color: var(--spesial-4);
+}
+
+.modal {
+  color: var(--basic-black);
+  width: 16px;
+  height: 18px;
+  font-weight: 700;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+}

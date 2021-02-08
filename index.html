@@ -34,7 +34,7 @@
 
       <section class="presentation"> <!--блок с картинками телефонов-->
         <!--<h2>Презентации</h2>-->
-          <p style="font-size: 55px">Долго, дорого, скрупулезно</p>
+          <p class="pass-55">Долго, дорого, скрупулезно</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
           <p><button class="button" type="button">Узнать больше</button></p>
             <a>
@@ -57,21 +57,21 @@
                  width="300" height="146" alt="приложения">
             <h3>Приложения</h3>
              <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-             <p><button class="button button-app" type="button">Заказать</button></p>
+             <p><button class="button btn-app" type="button">Заказать</button></p>
           </li>
           <li class="work-item">
             <img src="img/illustration/illustration-3.jpg"
                  width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете насколько вы измительны!</p>
-            <p><button class="button button-prsnt" type="button">Заказать</button></p>
+            <p><button class="button btn-prsnt" type="button">Заказать</button></p>
           </li>
         </ul>
       </section>
 
       <section class="feature"> <!--блок про фирму с цифрами и лого-->
         <!--<h2 class="visually-hidden">Кто мы</h2>-->
-          <p style="font-size: 45px">Мы маленькая, но гордая студия из Краснодара</p>
+          <p class="pass-45">Мы маленькая, но гордая студия из Краснодара</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математичесий расчет
             превыше креатива. Работаем, не покладая рук, как роботы.</p>
                 <h3>Выполняем заказы на разработку:</h3>
@@ -92,6 +92,7 @@
             </tr>
           </table>
       </section>
+
       <section class="logo-list"><!--блок с ссылками и лого компаний-->
           <!--<h2>логотипы компаний</h2>-->
           <a href="blank.html"><img src="img/icon/logo-group.png"
@@ -107,6 +108,28 @@
             width="173" height="84" alt="Mishka">
           </a>
       </section>
+
+      <section class="modal"><!--выпадающее окно для записи в footer на всех страницах-->
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-name">
+            <label for="appointment-name"></label>Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
+          </p>
+          <p class="appointment-email">
+            <label for="appointment-emal"></label>Ваш email:</label>
+            <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-letter">
+            <label for="appointment-letter"></label>Текст письма:</label>
+            <input id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
+          </p>
+          <p>
+            <input class="button" type="submit" value="Отправить">
+          </p>
+        </form>
+      </section>
+
     </main>
 
     <footer class="main-footer">
@@ -146,25 +169,8 @@
       </section>
     </footer>
 
-    <section class="modal"><!--выпадающее окно для записи-->
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p class="appointment-name">
-          <label for="appointment-name"></label>Ваше имя:</label>
-          <input id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
-        </p>
-        <p class="appointment-email">
-          <label for="appointment-emal"></label>Ваш email:</label>
-          <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p class="appointment-letter">
-          <label for="appointment-letter"></label>Текст письма:</label>
-          <input id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
-        </p>
-        <p><button type="button">Отправить</button></p>
-      </form>
-    </section>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+
+    <p>"Репозиторий создан для обучения на профессиональном онлайн‑курсе"«<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
 </html>
