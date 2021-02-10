@@ -47,7 +47,9 @@
    --spesial-3: #FB565A;
    --spesial-3h:#E74246;
    --special-3f:#D7373B;
-
+   --special-4: #DFDFDF;
+   --special-5: #DBDBDB;
+   --special-6: #D5D5D5;
 }
 
 /*Global*/
@@ -131,7 +133,83 @@
     text-transform: uppercase;
   }
 
-  /*feature*/
+
+
+/*catalog*/
+
+.page-catalog {
+  color: var(--basic-black);
+  width: 16px;
+  height: 18px;
+  font-weight: 400;
+}
+
+.page-catalog h1 {
+  color: var(--basic-extra-dark);
+  width: 55px;
+  height: 55px;
+  font-weight: 500;
+}
+
+ /*filters*/
+
+.filter-cost { /*бегунок стоимости*/
+  height: 19px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.filter-list { /*сетка и особенности*/
+  height: 19px;
+  list-style: none;
+}
+
+
+.filter-sort {  /*сортировать кнопки*/
+  color: var(--basic-black); /*покой*/
+  width: 14px;
+  height: 18px;
+  font-weight: 400;
+  opacity: 30%;
+  list-style: none;
+}
+
+.filter-sort a:hover{ /*наведение*/
+    opacity: 60%;
+  }
+
+.filter-sort a:focus {/*нажатие черный цвет 30% прозрачности*/
+    color: var(--basic-black);
+  }
+
+  /*products*/
+
+  .catalog-products {
+    list-style: none;
+  }
+
+  /*pagination*/
+
+  .pagination-list {
+    list-style: none;
+  }
+
+  .pagination-item a {
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-neutral-light);
+  }
+
+  .pagination-item a:hover {
+    background-color: var(--special-4);
+  }
+  .pagination-item a:focus {
+    opacity: 30%;
+    background-color: var(--special-6);
+  }
+  .pagination-item a:active {
+    background-color: var(--special-5);
+  }
 
   /*Buttons*/
 
@@ -195,6 +273,27 @@
   background-position: 0 0;
 }
 
+
+/* Contacts */
+.footer-contacts {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-light-dark);
+}
+
+.footer-contacts h2 {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.pass-36 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
   /* Social button */
 
 .social-list {
@@ -226,3 +325,4 @@
   line-height: 53px;
   text-transform: uppercase;
 }
+
