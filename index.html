@@ -15,6 +15,7 @@
   <body class="page-body">
     <header class="main-header">
         <nav class="main-navigation">
+          <div class="main-header-bar">
           <a class="main-header-logo"><!--класс для картинки ссылки-->
             <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
@@ -28,18 +29,24 @@
             <li><a href="blank.html"><img src="img/icon/cart-icon.png" width="15" height="15" alt="Корзина"></a></li>
             <li><a href="blank.html">Корзина</a></li>
           </ul>
+          </div>
         </nav>
     </header>
+
     <main class="container">
 
       <section class="presentation"> <!--блок с картинками телефонов-->
         <!--<h2>Презентации</h2>-->
-          <p class="pass-55">Долго, дорого, скрупулезно</p>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-            <a>
-              <img src="img/illustration/nerds-index-slide-1.jpg" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
+        <ul class="presentation-list">
+          <li class="presentation-item">
+            <p class="pass-55">Долго, дорого, скрупулезно</p>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <p><button class="button" type="button">Узнать больше</button></p>
+          </li>
+          <li class="presentation-item">
+            <a><img src="img/illustration/nerds-index-slide-1.jpg" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
             </a>
+          </li>
       </section>
 
       <section class="work"> <!--блок с веб-сайты. приложения. презентации-->
@@ -71,15 +78,18 @@
 
       <section class="feature"> <!--блок про фирму с цифрами и лого-->
         <!--<h2 class="visually-hidden">Кто мы</h2>-->
+        <div class="feature-item-left">
           <p class="pass-45">Мы маленькая, но гордая студия из Краснодара</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математичесий расчет
             превыше креатива. Работаем, не покладая рук, как роботы.</p>
                 <h3>Выполняем заказы на разработку:</h3>
-                  <ul class="feature-item">
+                  <ul>
                     <li>Веб-сайты различно сложности</li>
                     <li>Мобильные приложния для iOS и Android</li>
                     <li>Слайд-шоу и видео для корпоративных презентаций</li>
                   </ul>
+        </div>
+        <div class="feature-item-right" >
           <a>
             <img src="img/illustration/nerds-illustration-1.jpg" width="360" height="208" alt="Логотип студии Nёрд's"><!--сюда картинка с логотипом-->
           </a>
@@ -91,6 +101,7 @@
               <td>Уровень самоотдачи</td><td>Соблюдение сроков</td><td>Минимальная предоплата</td>
             </tr>
           </table>
+        </div>
       </section>
 
       <section class="logo-list"><!--блок с ссылками и лого компаний-->
@@ -148,11 +159,7 @@
             <a class="button" href="blank.html">Напишите нам</a>
           </p>
       </section>
-      <section> <!-- блок про скидки и дружбу-->
-        <!--<h2>Скидки друзьям</h2>-->
-            <p class="pass-36">Давайте дружить-это выгодно</p>
-            <p>Скидка 10% для друзей из соцсетей</p>
-      </section>
+    <div class="footer-box">
       <section class="footer-social"> <!-- блок кнопки на соцсети-->
         <!--<h2 class="visually-hidden">Ссылка на соцсети</h2>-->
         <ul class="social-list"> <!-- ссылки на логотипы пока без серого фона-->
@@ -167,6 +174,12 @@
           </li>
         </ul>
       </section>
+      <section class="footer-line"> <!-- блок про скидки и дружбу-->
+        <!--<h2>Скидки друзьям</h2>-->
+            <p class="pass-36">Давайте дружить-это выгодно</p>
+            <p>Скидка 10% для друзей из соцсетей</p>
+      </section>
+    </div>
     </footer>
 
 
