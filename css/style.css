@@ -86,7 +86,7 @@
 /* Main header */
 
 .main-header {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
 }
@@ -140,15 +140,18 @@
 
  /*presentation*/
 
- .presentation {
+.presentation {
   margin-bottom: 80px;
-  color: var(--basic-neutral-light);
-  list-style: none;
     }
 
 .presentation-list {
+  background-color: var(--basic-neutral-light);
+  list-style: none;
+}
+
+.presentation-list {
   display: grid;
-  grid-template-columns: auto 1fr ; /*не по макету*/
+  grid-template-columns: auto 1fr ;
   margin: 0;
   padding: 0;
  }
@@ -376,11 +379,11 @@
 /* Contacts */
 
 .footer-contacts {
-width: 319px;
-height: 308px;
-text-align: center;
-outline: 5px solid rgba(0, 255, 42, 0.7);
-outline-offset: -5px;
+  width: 319px;
+  height: 308px;
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 42, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-contacts {
