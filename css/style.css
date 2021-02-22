@@ -79,8 +79,24 @@
 
      /* Grid */
 
-  .page {
+.page {
    height: 100%;
+}
+
+/* Grid for pages */
+
+.page-catalog {
+display: grid;
+grid-template-columns: 280px auto ;
+gap: 10px;
+outline: 5px solid rgba(255, 0, 0, 0.7);
+outline-offset: -5px;
+}
+
+.page-catalog .page-title {
+  grid-column: 1 / -1;
+  outline: 5px solid rgba(0, 47, 255, 0.808);
+  outline-offset: -5px;
 }
 
 /* Main header */
@@ -241,38 +257,51 @@
 
 .page-catalog {
   color: var(--basic-black);
-  width: 16px;
-  height: 18px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
 }
 
-.page-catalog h1 {
+ /*filters page-catalog*/
+
+ .page-title {
   color: var(--basic-extra-dark);
-  width: 55px;
-  height: 55px;
+  font-size: 55px;
+  line-height: 55px;
   font-weight: 500;
+  width: 1440px;
+  height: 202px;
+  text-align: center;
+  background-color: var(--basic-neutral-light);
+
+ }
+
+ .filter-item {
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+.filter-sort {
+  outline: 5px solid rgba(0, 255, 0, 0.822);
+  outline-offset: -5px;
 }
 
- /*filters*/
-
 .filter-cost { /*бегунок стоимости*/
-  height: 19px;
+  line-height: 19px;
   text-transform: uppercase;
   list-style: none;
 }
 
 .filter-list { /*сетка и особенности*/
-  height: 19px;
+  line-height: 19px;
   list-style: none;
 }
 
 
 .filter-sort {  /*сортировать кнопки*/
   color: var(--basic-black); /*покой*/
-  width: 14px;
-  height: 18px;
-  font-weight: 400;
-  opacity: 30%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400px;
   list-style: none;
 }
 
@@ -284,8 +313,19 @@
     color: var(--basic-black);
   }
 
-  /*products*/
+  /*products page-catalog*/
+  .filter-item {
+    outline: 5px solid rgba(3, 87, 76, 0.829);
+    outline-offset: -5px;
+  }
 
+  .catalog-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    outline: 5px solid rgba(37, 2, 65, 0.829);
+    outline-offset: -5px;
+  }
   .catalog-products {
     list-style: none;
   }
@@ -360,11 +400,24 @@
     opacity: 30%;
     background-color: var(--special-1f);
   }
-    /* Contacts */
+
+/* Contacts */
 
 .contacts-phone {
   color: inherit;
 }
+
+/* Catalog */
+
+.catalog {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.catalog-products {
+  list-style: none;
+}
+
 
 
 /* Main footer */
