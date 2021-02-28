@@ -35,23 +35,37 @@
 
     <main class="page-catalog">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <div>
-      <section class="filter-item">
+      <div class="filter-cost">
+      <section >
           <!--<h2>Фильтр товаров</h2>--> <!--блок фильтров слева-->
-          <form class="filter-list" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="filter-cost">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
-                <input type="range" name="cost" min="0" max="15000"
-                       value="100" class="slider" id="myCost">
-                <table><!--т фильтр ОТ ДО  -->
-                  <tr>
-                    <th>от</th><th>0</th><th>до</th><th>15000</th>
-                  </tr>
-                </table>
-              </fieldset>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style ="width: 30%; margin-left: 20%"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" style="
+                    left: 20%">
+                    </div>
+                    <div class="toggle toggle-max" tabindex="0" style="
+                    left: 50%"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="15000">
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </form>
               <fieldset> <!--список фильтров Сетка (одна кнопка выбора)-->
                 <legend>Сетка:</legend>
-                <ul class="filter-list">
+                <ul class="filter-list-radio">
                   <li><!--адаптивная-->
                     <input type="radio" name="grid" value="adaptive" id="filter-adaptive">
                     <label for="filter-adaptive">Адаптивная</label>
@@ -68,7 +82,7 @@
               </fieldset>
               <fieldset><!--список фильтров Особенности (несколько вариантов выбора)-->
                 <legend>Особенности:</legend>
-                <ul class="filter-list">
+                <ul class="filter-list-checkbox">
                   <li>
                     <input type="checkbox" name="slider" id="filter-slider" checked>
                     <label for="filter-slider">Слайдер</label>
@@ -98,35 +112,35 @@
       <div>
       <section class="filter-sort"><!--блок сортировать-->
           <h2>Сортировать:</h2>
-          <ul>
+          <ul class="filter-name">
             <li>
-              <p><button type="button">По цене</button></p>
-              <p><button type="button">По типу</button></p>
-              <p><button type="button">По названию</button></p>
+              <button type="button">По цене</button>
+              <button type="button">По типу</button>
+              <button type="button">По названию</button>
             </li>
           </ul>
       </section>
       <section>
-          <!--<h2 class="visually-hidden">Список примеров сайтов</h2>-->
+          <!--<h2 class="visually-hidden">Список примеров сайтов</h2> удалить потом-->
           <ul class="catalog-products">
-            <li>
-              <div>
-              <a href="blank.html">
-                  <!--<h3 class="visually-hidden">Sedona</h3>-->
+            <li class="catalog-item">
+              <div class="catalog-item-image">
+                <a href="blank.html">
+                  <!--<h3 class="visually-hidden">Sedona</h3> удалить потом-->
                     <img src="img/products/line-1.png" width="360" height="40"
                     alt="Линия наведение»">
-                  </div>
-                  <div>
+              </div>
+              <div>
                     <img src="img/products/img-sedona-1.jpg" width="359" height="578"
                     alt="Информационный сайт для туристов «Sedona»">
-              </a>
-                <p><button class="button" type="button">9 900 руб</button></p>
+                </a>
+                    <button class="button" type="button">9 900 руб</button>
               </div>
             </li>
-            <li>
+            <li class="catalog-item">
               <a href="blank.html">
-                  <!--<h3 class="visually-hidden">Pink</h3>-->
-                  <div>
+                  <!--<h3 class="visually-hidden">Pink</h3> удалить потом-->
+                  <div class="catalog-item-image">
                     <img src="img/products/line-2.png" width="360" height="40"
                     alt="Линия покой»">
                   </div>
@@ -136,10 +150,10 @@
                   </div>
               </a>
             </li>
-            <li>
+            <li class="catalog-item">
               <a href="blank.html">
-                  <!--<h3 class="visually-hidden">Барбершоп</h3>-->
-                  <div>
+                  <!--<h3 class="visually-hidden">Барбершоп</h3> удалить потом-->
+                  <div class="catalog-item-image">
                     <img src="img/products/line-2.png" width="360" height="40"
                     alt="Линия покой»">
                   </div>
@@ -149,10 +163,10 @@
                   </div>
               </a>
             </li>
-            <li>
+            <li class="catalog-item">
               <a href="blank.html">
-                  <!--<h3 class="visually-hidden">Mishka</h3>-->
-                  <div>
+                  <!--<h3 class="visually-hidden">Mishka</h3> удалить потом-->
+                  <div class="catalog-item-image">
                     <img src="img/products/line-2.png" width="360" height="40"
                     alt="Линия покой»">
                   </div>
@@ -162,23 +176,23 @@
                   </div>
               </a>
             </li>
-            <li>
+            <li class="catalog-item">
               <a href="blank.html">
                   <!--<h3 class="visually-hidden">сайт A+</h3>-->
-                  <div>
+                  <div class="catalog-item-image">
                     <img src="img/products/line-2.png" width="360" height="40"
                     alt="Линия покой»">
                   </div>
                   <div>
-                    <img src="img/products/img-mishka-1.jpg" width="359" height="578"
+                    <img src="img/products/img-aplus-1.jpg" width="359" height="578"
                     alt="Учебный сайт «A+»">
                   </div>
               </a>
             </li>
-            <li>
+            <li class="catalog-item">
               <a href="blank.html">
                   <!--<h3 class="visually-hidden">Крафтовый квас «Кваст»</h3>-->
-                  <div>
+                  <div class="catalog-item-image">
                     <img src="img/products/line-2.png" width="360" height="40"
                     alt="Линия покой»">
                   </div>
@@ -209,8 +223,8 @@
       <section class="footer-contacts">
     <!--<h2 class="visually-hidden">Как связаться</h2>-->
         <h2>Nerd's design studio</p>
-        <p>191186, Санкт-Петербург
-           ул. Б. Конюшенная, д. 19/8
+        <p>191186, Санкт-Петербург<br>
+           ул. Б. Конюшенная, д. 19/8<br>
            тел.: <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           <a class="button" href="blank.html">Напишите нам</a>
         </p>
