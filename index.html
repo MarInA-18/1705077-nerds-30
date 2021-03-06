@@ -13,9 +13,9 @@
   </head>
 
   <body class="page-body">
+
     <header class="main-header">
         <nav class="main-navigation">
-          <div class="main-header-bar">
           <a class="main-header-logo"><!--класс для картинки ссылки-->
             <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
@@ -29,26 +29,27 @@
             <li><a href="blank.html"><img src="img/icon/cart-icon.png" width="15" height="15" alt="Корзина"></a></li>
             <li><a href="blank.html">Корзина</a></li>
           </ul>
-          </div>
         </nav>
     </header>
 
-    <main class="container">
+    <main>
 
       <section class="presentation"> <!--блок с картинками телефонов-->
         <!--<h2>Презентации</h2>-->
         <ul class="presentation-list">
-          <li class="presentation-item">
-            <p class="pass-55">Долго, дорого, скрупулезно</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <li class="text-presentation-item">
+            <p class="title-55">Долго, дорого, скрупулезно</p>
+            <p>Математически выверенный дизайн <br>
+               для вашего сайта или мобильного приложения</p>
             <button class="button" type="button">Узнать больше</button>
           </li>
-          <li class="presentation-item">
+          <li class="foto-presentation-item">
             <a><img src="img/illustration/nerds-index-slide-1.jpg" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
             </a>
           </li>
       </section>
 
+    <div class="index-page">
       <section class="work"> <!--блок с веб-сайты. приложения. презентации-->
         <!--<h2 class="visually-hidden">Что мы делаем</h2> -->
         <ul class="work-list">
@@ -56,7 +57,7 @@
             <img src="img/illustration/illustration-1.jpg"
             width="300" height="146" alt="веб-сайты">
             <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним когда увидит ваш сайт</p>
+            <p>Мир никогда не будет прежним <br> когда увидит ваш сайт</p>
             <button class="button" type="button">Заказать</button>
           </li>
           <li class="work-item">
@@ -70,7 +71,7 @@
             <img src="img/illustration/illustration-3.jpg"
                  width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
-            <p>Вы даже не подозреваете насколько вы измительны!</p>
+            <p>Вы даже не подозреваете <br> насколько вы изумительны!</p>
             <button class="button btn-prsnt" type="button">Заказать</button>
           </li>
         </ul>
@@ -79,7 +80,7 @@
       <section class="feature"> <!--блок про фирму с цифрами и лого-->
         <!--<h2 class="visually-hidden">Кто мы</h2>-->
         <div class="feature-item-left">
-          <p class="pass-45">Мы маленькая, но гордая студия из Краснодара</p>
+          <p class="title-45">Мы - маленькая, но гордая дизайн-студия из Краснодара</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математичесий расчет
             превыше креатива. Работаем, не покладая рук, как роботы.</p>
                 <h3>Выполняем заказы на разработку:</h3>
@@ -93,16 +94,16 @@
           <a>
             <img src="img/illustration/nerds-illustration-1.jpg" width="360" height="208" alt="Логотип студии Nёрд's"><!--сюда картинка с логотипом-->
           </a>
+          <h3>C 2004 года любим точность во всем:</h3>
           <table>
-            <tr>
+            <tr class="item-right-th">
               <th>146%</th><th>100%</th><th>50%</th>
             </tr>
-            <tr>
+            <tr class="item-right-td">
               <td>Уровень самоотдачи</td><td>Соблюдение сроков</td><td>Минимальная предоплата</td>
             </tr>
           </table>
-        </div>
-      </section>
+        </section>
 
       <section class="logo-list"><!--блок с ссылками и лого компаний-->
           <!--<h2>логотипы компаний</h2>-->
@@ -118,33 +119,13 @@
           <a href="blank.html"><img src="img/icon/logo-mishka.png"
             width="173" height="84" alt="Mishka">
           </a>
+        </div>
       </section>
-
-      <section class="modal"><!--выпадающее окно для записи в footer на всех страницах-->
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="appointment-name"></label>Ваше имя:</label>
-            <input id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
-          </p>
-          <p>
-            <label for="appointment-emal"></label>Ваш email:</label>
-            <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="appointment-letter"></label>Текст письма:</label>
-            <input id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
-          </p>
-          <p>
-            <input class="button" type="submit" value="Отправить">
-          </p>
-        </form>
-      </section>
-
+    </div>
     </main>
 
     <footer class="main-footer">
-      <section>
+      <section class="modal modal-map">
         <!--<h2>Как до нас добраться</h2>--><!-- карта -->
         <a>
          <!-- <img src="img/illustration/map 1.jpg" width="1440" height="416" alt="карта">-->
@@ -152,38 +133,59 @@
       </section>
       <section class="footer-contacts">
         <!--<h2 class="visually-hidden">Как связаться</h2>-->
-          <h2>Nerd's design studio</p>
-          <p>191186, Санкт-Петербург<br>
+        <h2>Nerd's design studio</h2>
+        <p>191186, Санкт-Петербург<br>
            ул. Б. Конюшенная, д. 19/8<br>
-           тел.: <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-            <a class="button" href="blank.html">Напишите нам</a>
-          </p>
+           тел.: <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+          <a class="footer-button-contacts" href="blank.html">Напишите нам</a>
       </section>
 
-    <div class="footer-box">
-      <section class="footer-social"> <!-- блок кнопки на соцсети-->
-        <!--<h2 class="visually-hidden">Ссылка на соцсети</h2>-->
-        <ul class="social-list"> <!-- ссылки на логотипы пока без серого фона-->
-          <li>
-            <a class="social-button" href="#">вк<img src="img/icon/vk-icon.svg" width="26" height="15" alt="вк"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#">фб<img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#">инста<img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-line"> <!-- блок про скидки и дружбу-->
-        <!--<h2>Скидки друзьям</h2>-->
-            <p class="pass-36">Давайте дружить-это выгодно</p>
-            <p>Скидка 10% для друзей из соцсетей</p>
-      </section>
-    </div>
+      <div class="footer-box">
+        <section class="footer-social"> <!-- блок кнопки на соцсети-->
+          <!--<h2 class="visually-hidden">Ссылка на соцсети</h2>-->
+          <ul> <!-- ссылки на логотипы пока без серого фона-->
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span><img src="img/icon/vk-icon.svg" width="26" height="15" alt="вк"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span><img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span><img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-line"> <!-- блок про скидки и дружбу-->
+          <!--<h2>Скидки друзьям</h2>-->
+              <p class="title-36">Давайте дружить-это выгодно!</p>
+              <p>Скидка 10% для друзей из соцсетей</p>
+        </section>
+      </div>
     </footer>
 
-
+    <section class="modal modal-user"><!--выпадающее окно для записи в footer на всех страницах-->
+      <h2>Напишите нам</h2>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="appointment-name"></label>Ваше имя:</label>
+          <input class="name-user" id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
+        </p>
+        <p>
+          <label for="appointment-emal"></label>Ваш email:</label>
+          <input class="mail-user" id="appointment-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="appointment-letter"></label>Текст письма:</label>
+          <input class="text-user" id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
+        </p>
+          <input class="button" type="submit" value="Отправить">
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </form>
+    </section>
     <p>"Репозиторий создан для обучения на профессиональном онлайн‑курсе"«<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
