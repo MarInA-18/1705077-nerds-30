@@ -56,7 +56,7 @@
 
 .page-body  {
   width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -159,11 +159,11 @@
   padding: 48px 20px;
 }
 
-.site-navigation a:hover, /*наведение*/
+.site-navigation a:hover,
 .box-navigation a:hover {
   color: var(--special-3);
 }
-.site-navigation a:focus, /*нажатие черный цвет 30% прозрачности*/
+.site-navigation a:focus,
 .box-navigation a:focus {
   opacity: 0.3;
   color: var(--special-3);
@@ -332,7 +332,7 @@
   color: var(--basic-black);
 }
 
-.logo-list a :focus {
+.logo-list a:focus {
   color: var(--basic-black);
   opacity: 0.2;
 }
@@ -596,11 +596,11 @@
   border: none;
 }
 
-.btn-sort a:hover{
+.btn-sort:hover{
   opacity: 60%;
 }
 
-.btn-sort a:focus {
+.btn-sort:focus {
   color: var(--basic-black);
 }
 
@@ -701,6 +701,13 @@ text-align: center;
 
 
   /*Buttons*/
+.button,
+.btn-prsnt,
+.btn-app,
+.btn-filter
+.button-product{
+  display: block;
+}
 
 .button,
 .btn-app, .btn-prsnt {
@@ -749,11 +756,17 @@ text-align: center;
   justify-content: center;
 }
 
-.button a:hover {
+.button-product {
+  width: 200px;
+  height: 50px;
+  margin-left: 80px;
+}
+
+.button:hover {
   background-color: var(--special-3h);
 }
 
-.button a:focus {
+.button:focus {
   opacity: 30%;
   background-color: var(--special-3f);
 }
@@ -762,11 +775,11 @@ text-align: center;
   background-color: var(--special-2);
 }
 
-.btn-app :hover {
+.btn-app:hover {
   background-color: var(--special-2h);
 }
 
-.button a:focus {
+.button:focus {
   opacity: 30%;
   background-color: var(--special-2f);
 }
@@ -775,28 +788,15 @@ text-align: center;
   background-color: var(--special-1);
 }
 
-.btn-prsnt :hover {
+.btn-prsnt:hover {
   background-color: var(--special-1h);
 }
 
-.btn-prsnt a:focus {
+.btn-prsnt:focus {
   opacity: 30%;
   background-color: var(--special-1f);
 }
 
-.button,
-.btn-prsnt,
-.btn-app,
-.btn-filter
-.button-product{
-  display: block;
-}
-
-.button-product {
-  width: 200px;
-  height: 50px;
-  margin-left: 80px;
-}
 
 
 
@@ -940,7 +940,7 @@ text-align: center;
 /* Modal user  Write*/
 
 .modal-user {
-  top: 200px;
+  position: relative;
   bottom: auto;
   width: 760px;
   height: 438px;
@@ -1012,6 +1012,7 @@ text-align: center;
   right: 80px;
   width: 22px;
   height: 22px;
+  font-size: 0;
   background-color: transparent;
   border: 0;
   cursor: pointer;
