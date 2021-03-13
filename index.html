@@ -16,7 +16,7 @@
 
     <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="blank.html">
             <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
           <ul class="site-navigation">
@@ -41,7 +41,8 @@
               <p class="presentation-subtitle">Долго, дорого, скрупулезно</p>
               <p>Математически выверенный дизайн <br>
                для вашего сайта или мобильного приложения</p>
-              <button class="button" type="button">Узнать больше</button>
+              <button class="button button-info" type="button">
+              <span class="button-text">Узнать больше</span></button>
             </li>
             <li class="foto-presentation-item">
             <a><img src="img/illustration/nerds-index-slide-1.png" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
@@ -58,25 +59,27 @@
                  width="300" height="146" alt="веб-сайты">
               <h3>Веб-сайты</h3>
                 <p>Мир никогда не будет прежним <br> когда увидит ваш сайт</p>
-                <button class="button" type="button">Заказать</button>
+                <button class="button" type="button">
+                  <span class="button-text">Заказать</span></button>
               </li>
               <li class="work-item">
                 <img src="img/illustration/illustration-2.jpg"
                   width="300" height="146" alt="приложения">
               <h3>Приложения</h3>
                  <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-                 <button class="button btn-app" type="button">Заказать</button>
+                 <button class="button button-yellow" type="button">
+                 <span class="button-text">Заказать</span></button>
               </li>
               <li class="work-item">
                 <img src="img/illustration/illustration-3.jpg"
                  width="300" height="146" alt="Презентации">
               <h3>Презентации</h3>
                 <p>Вы даже не подозреваете <br> насколько вы изумительны!</p>
-                <button class="button btn-prsnt" type="button">Заказать</button>
+                <button class="button button-green" type="button">
+                <span class="button-text">Заказать</span></button>
               </li>
             </ul>
         </section>
-
         <section class="feature">
           <h2 class="visually-hidden">Кто мы</h2>
         <div class="feature-item-left">
@@ -84,10 +87,10 @@
           <p>Исповедуем принципы минимализма и чистоты. Ставим математичесий расчет
             превыше креатива. Работаем, не покладая рук, как роботы.</p>
                 <h3>Выполняем заказы на разработку:</h3>
-                  <ul>
-                    <li>Веб-сайты различно сложности</li>
-                    <li>Мобильные приложния для iOS и Android</li>
-                    <li>Слайд-шоу и видео для корпоративных презентаций</li>
+                  <ul >
+                    <li class="feature-text">Веб-сайты различно сложности</li>
+                    <li class="feature-text">Мобильные приложния для iOS и Android</li>
+                    <li class="feature-text">Слайд-шоу и видео для корпоративных презентаций</li>
                   </ul>
         </div>
         <div class="feature-item-right" >
@@ -97,46 +100,50 @@
           <h3>C 2004 года любим точность во всем:</h3>
           <table>
             <tr class="item-right-th">
-              <th>146%</th><th>100%</th><th>50%</th>
+              <th>146<sup>%</sup></th><th>100<sup>%</sup></th><th>50<sup>%</sup></th>
             </tr>
             <tr class="item-right-td">
               <td>Уровень самоотдачи</td><td>Соблюдение сроков</td><td>Минимальная предоплата</td>
             </tr>
           </table>
         </section>
-
-      <section class="logo-list">
-        <h2 class="visually-hidden">логотипы компаний</h2>
-          <a href="blank.html"><img src="img/icon/logo-group.png"
+      </div>
+      <div>
+        <section class="logo-list">
+          <h2 class="visually-hidden">логотипы компаний</h2>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/icon/logo-group.png"
              width="199" height="67" alt="htmlacademy">
-          </a>
-          <a href="blank.html"><img src="img/icon/logo-borod.png"
-            width="209" height="90" alt="Бородинский">
-          </a>
-          <a href="blank.html"><img src="img/icon/logo-pink.png"
-            width="185" height="52" alt="Pink">
-          </a>
-          <a href="blank.html"><img src="img/icon/logo-mishka.png"
-            width="173" height="84" alt="Mishka">
-          </a>
-        </div>
-      </section>
-    </div>
+            </a>
+            <a href="blank.html"><img src="img/icon/logo-borod.png"
+              width="209" height="90" alt="Бородинский">
+            </a>
+            <a href="blank.html"><img src="img/icon/logo-pink.png"
+              width="185" height="52" alt="Pink">
+            </a>
+            <a href="blank.html"><img src="img/icon/logo-mishka.png"
+              width="173" height="84" alt="Mishka">
+            </a>
+        </section>
+      </div>
+
     </main>
 
     <footer class="main-footer">
       <div class="footer-map-contacts">
-        <section class="footer-map">
+        <div class="footer-map">
+        <section>
           <h2 class="visually-hidden">Как до нас добраться</h2>
-        <!--
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.
             6037999040354!2d30.322010416394033!3d59.
             938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
             1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.
             %2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-             width="1440" height="416" alt="карта">
-          -->
+             height="416" alt="карта"></iframe>
         </section>
+        </div>
+        <div class="map-marker"><img src="img/icon/map-marker.png"
+          width="231" height="190" alt="Маркер">
+        </div>
         <div class="footer-contacts">
         <section>
           <h2 class="visually-hidden">Как с нами связаться</h2>
@@ -153,16 +160,16 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Ссылка на соцсети</h2>
           <ul>
-            <li>
-              <a class="social-button" href="#">
+            <li class="social-button">
+              <a href="#">
                 <span class="visually-hidden">Вконтакте</span><img src="img/icon/vk-icon.svg" width="26" height="15" alt="вк"></a>
             </li>
-            <li>
-              <a class="social-button" href="#">
+            <li class="social-button">
+              <a href="#">
                 <span class="visually-hidden">Фейсбук</span><img src="img/icon/fb-icon.svg" width="12" height="22" alt="фб"></a>
             </li>
-            <li>
-              <a class="social-button" href="#">
+            <li class="social-button">
+              <a href="#">
                 <span class="visually-hidden">Инстаграм</span><img src="img/icon/insta-icon.svg" width="21" height="21" alt="инста"></a>
             </li>
           </ul>
@@ -175,7 +182,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-user">
+    <section class="modal-user">
       <h2>Напишите нам</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="appointment-form">
@@ -199,7 +206,7 @@
 
     <script src="modal.js"></script>
 
-    <p>"Репозиторий создан для обучения на профессиональном онлайн‑курсе"«<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+
 
   </body>
 </html>

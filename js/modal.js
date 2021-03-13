@@ -1,52 +1,27 @@
-const modalLink = document.querySelector(".footer-button-contact");
-const modalPopup = document.querySelector(".modal-user");
-const modalClose = loginPopup.querySelector(".modal-close");
-const modalForm = loginPopup.querySelector(".modal-form");
-const modalName = loginPopup.querySelector(".name-user");
-const modalMail = loginPopup.querySelector(".mail-user");
-const modalText = loginPopup.querySelector(".text-user");
+const modalLink = $(".footer-button-contact");
+const modalPopup = $(".modal-form");
+const modalClose = $(".modal-close");
+const modalName = $(".name-user");
+const modalMail = $(".mail-user");
+const modalText = $(".text-user");
 
-let isStorageSupport = true;
-let storage = "";
+ // Form opening, close
 
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-modalLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalPopup.classList.add("modal-show");
-
-  if (storage) {
-    modalName.value = storage;
+ link.click(function(event) {
+  event.preventDefault();
+  console.log(input_email.val());
+  if (popup.hasClass("modal-form-show")) {
+    popup.removeClass("modal-form-show modal-form-error");
   }
-
-  modalLogin.focus();
-});
-
-modalClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalPopup.classList.remove("modal-show");
-});
-
-modalForm.addEventListener("submit", function (evt) {
-  if (!modalName.value || !modalMail.value) {
-  evt.preventDefault();
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("login", modalName.value);
-    }
+  else {
+    popup.removeClass("modal-form-error");
+    popup.addClass("modal-form-show modal-form-error");
+    setTimeout(function() {
+      input_name.focus() }, 500);
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (modalPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      modalPopup.classList.remove("modal-show");
-      modalPopup.classList.remove("modal-error");
-    }
-  }
+close.click(function(event) {
+  event.preventDefault();
+    popup.removeClass("modal-form-show modal-form-error");
 });
