@@ -1,21 +1,21 @@
-const modalLink = $(".footer-button-contact");
-const modalPopup = $(".modal-form");
-const modalClose = $(".modal-close");
-const modalName = $(".name-user");
-const modalMail = $(".mail-user");
-const modalText = $(".text-user");
+var link = $(".footer-button-contact"),
+    popup = $(".modal-user"),
+    close = $(".modal-close"),
+    name = $(".name-user"),
+    mail = $(".mail-user"),
+    text = $(".text-user");
 
  // Form opening, close
 
  link.click(function(event) {
   event.preventDefault();
   console.log(input_email.val());
-  if (popup.hasClass("modal-form-show")) {
-    popup.removeClass("modal-form-show modal-form-error");
+  if (popup.hasClass("modal-user")) {
+    popup.removeClass("modal-user");
   }
   else {
-    popup.removeClass("modal-form-error");
-    popup.addClass("modal-form-show modal-form-error");
+    popup.removeClass("modal-user");
+    popup.addClass("modal-user");
     setTimeout(function() {
       input_name.focus() }, 500);
   }
@@ -23,5 +23,13 @@ const modalText = $(".text-user");
 
 close.click(function(event) {
   event.preventDefault();
-    popup.removeClass("modal-form-show modal-form-error");
+    popup.removeClass("modal-user");
+});
+
+// Form closure with Esc
+$(window).keydown(function(event) {
+  if (event.keyCode == 27
+  && popup.hasClass("modal-user")) {
+    popup.removeClass("modal-user");
+  }
 });

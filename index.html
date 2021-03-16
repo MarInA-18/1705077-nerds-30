@@ -16,11 +16,11 @@
 
     <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="blank.html">
+          <a class="main-header-logo" href="index.html">
             <img src="img/icon/nerds-logo.svg" width="159" height="65" alt="Логотип студии Nёрд's">
           </a>
           <ul class="site-navigation">
-            <li><a href="blank.html">Cтудия</a></li>
+            <li><a class="item-select" href="blank.html">Cтудия</a></li>
             <li><a href="blank.html">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
@@ -32,24 +32,24 @@
         </nav>
     </header>
 
-    <main>
-
-      <section class="presentation">
-        <h2 class="visually-hidden">Презентации</h2>
-          <ul class="presentation-list">
-            <li class="text-presentation-item">
-              <p class="presentation-subtitle">Долго, дорого, скрупулезно</p>
-              <p>Математически выверенный дизайн <br>
-               для вашего сайта или мобильного приложения</p>
-              <button class="button button-info" type="button">
-              <span class="button-text">Узнать больше</span></button>
-            </li>
-            <li class="foto-presentation-item">
-            <a><img src="img/illustration/nerds-index-slide-1.png" width="760" height="431" alt="телефоны"> <!--картинка с телефонами-->
-            </a>
-            </li>
-      </section>
-
+    <main class="container">
+      <div class="presentation-conteiner">
+        <section class="presentation">
+          <h2 class="visually-hidden">Презентации</h2>
+            <ul class="presentation-list">
+              <li class="text-presentation-item">
+                <p class="presentation-subtitle">Долго, дорого, скрупулезно</p>
+                <p>Математически выверенный дизайн <br>
+                 для вашего сайта или мобильного приложения</p>
+                <button class="button button-info" type="button">
+                <span class="button-text">Узнать больше</span></button>
+              </li>
+              <li class="foto-presentation-item">
+              <a><img src="img/illustration/nerds-index-slide-1.png" width="760" height="431" alt="телефоны">
+              </a>
+              </li>
+        </section>
+      </div>
       <div class="index-page">
         <section class="work">
           <h2 class="visually-hidden">Что мы делаем</h2>
@@ -106,53 +106,46 @@
               <td>Уровень самоотдачи</td><td>Соблюдение сроков</td><td>Минимальная предоплата</td>
             </tr>
           </table>
-        </section>
-      </div>
-      <div>
-        <section class="logo-list">
-          <h2 class="visually-hidden">логотипы компаний</h2>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/icon/logo-group.png"
+        </div>
+      </section>
+      <section class="logo-list" >
+        <h2 class="visually-hidden">логотипы компаний</h2>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/icon/logo-group.png"
              width="199" height="67" alt="htmlacademy">
-            </a>
-            <a href="blank.html"><img src="img/icon/logo-borod.png"
+          </a>
+          <a href="blank.html"><img src="img/icon/logo-borod.png"
               width="209" height="90" alt="Бородинский">
-            </a>
-            <a href="blank.html"><img src="img/icon/logo-pink.png"
+          </a>
+          <a href="blank.html"><img src="img/icon/logo-pink.png"
               width="185" height="52" alt="Pink">
-            </a>
-            <a href="blank.html"><img src="img/icon/logo-mishka.png"
+          </a>
+          <a href="blank.html"><img src="img/icon/logo-mishka.png"
               width="173" height="84" alt="Mishka">
-            </a>
-        </section>
-      </div>
+          </a>
+      </section>
 
     </main>
 
     <footer class="main-footer">
       <div class="footer-map-contacts">
         <div class="footer-map">
-        <section>
           <h2 class="visually-hidden">Как до нас добраться</h2>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.
-            6037999040354!2d30.322010416394033!3d59.
-            938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-            1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.
-            %2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-             height="416" alt="карта"></iframe>
-        </section>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"height="416" alt="карта"></iframe>
         </div>
-        <div class="map-marker"><img src="img/icon/map-marker.png"
-          width="231" height="190" alt="Маркер">
+        <div class="map-marker">
+          <span class="marker"><img src="img/icon/map-marker.png"
+          width="231" height="190" alt="Маркер"><span>
         </div>
-        <div class="footer-contacts">
-        <section>
+        <div class="contacts">
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Как с нами связаться</h2>
           <h2>Nerd's design studio</h2>
             <p>191186, Санкт-Петербург<br>
                ул. Б. Конюшенная, д. 19/8 </p>
             <p>тел.: <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
-          <a class="footer-button-contact" href="modal.html">Напишите нам</a>
+          <a class="button footer-button-contact" href="#"><span class="button-text">Напишите нам</span></a>
         </section>
         </div>
       </div>
@@ -184,27 +177,27 @@
 
     <section class="modal-user">
       <h2>Напишите нам</h2>
-        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="modal-form" action="#" method="get">
           <div class="appointment-form">
             <p class="appointment-item">
-              <label for="appointment-name"></label>Ваше имя:</label>
+              <label for="appointment-name">Ваше имя:</label>
               <input class="name-user" id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
             </p>
             <p class="appointment-item">
-              <label for="appointment-emal"></label>Ваш email:</label>
+              <label for="appointment-emal">Ваш email:</label>
               <input class="mail-user" id="appointment-email" type="text" name="email" placeholder="email@example.com">
             </p>
             <p class="appointment-text">
-              <label for="appointment-letter"></label>Текст письма:</label>
+              <label for="appointment-letter">Текст письма:</label>
               <input class="text-user" id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
             </p>
           </div>
-            <input class="button" type="submit" value="Отправить">
+            <input class="button button-form" type="submit" value="Отправить">
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </form>
     </section>
 
-    <script src="modal.js"></script>
+    <script src="js/modal.js"></script>
 
 
 
