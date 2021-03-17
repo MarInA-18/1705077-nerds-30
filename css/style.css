@@ -214,7 +214,6 @@ opacity: 0.3;
   width: 1440px;
   height: 430px;
   margin: auto;
-  padding-bottom: 80px;
 }
 
 .presentation-list {
@@ -254,6 +253,7 @@ opacity: 0.3;
   width: 1440px;
   margin: auto;
   align-content: center;
+  padding-top: 80px;
 }
 
 
@@ -1093,14 +1093,15 @@ width: 100%;
   margin-left: 240px;
   padding: 63px 100px 84px 100px;
   box-shadow: 0 20px 40px 0 rgb(0 1 1 / 75%);
-  display: none;
+ /* display: none;*/
 }
 
-.modal h2 {
-  margin-bottom: 37px;
+.modal-user h2 {
   font-size: 45px;
   line-height: 53px;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-top: auto;
 }
 
 .appointment-form {
@@ -1120,7 +1121,7 @@ width: 100%;
   width: 760px;
   height: 118px;
   margin-top: 0;
-  padding-bottom: 34px;
+  padding-bottom: 47px;
 }
 
 .appointment-item label {
@@ -1173,7 +1174,7 @@ width: 100%;
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 70px;
+  top: 78px;
   left: 2px;
   width: 21px;
   height: 3px;
