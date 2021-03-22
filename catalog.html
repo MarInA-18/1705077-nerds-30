@@ -143,7 +143,7 @@
                       <p> Информационный сайт <br> для туристов</p>
                       <button class="button button-product" type="button"
                       aria-label="Добавить сайт для туристов «Sedona» в корзину">
-                      <span class="button-text">9 900 руб</span></button>
+                      <span class="button-product-text">9 900 руб</span></button>
                   </div>
               </li>
               <li class="catalog-item">
@@ -158,6 +158,13 @@
                       alt="Приложение «Pink»">
                     </div>
                 </a>
+                  <div class="price-product">
+                    <h3>Pink app</h3>
+                      <p>Продуктовый лендинг<br>приложений для IOS и Android</p>
+                      <button class="button button-product" type="button"
+                      aria-label="Добавить сайт для «PINK APP» в корзину">
+                      <span class="button-product-text">9 900 руб</span></button>
+                  </div>
               </li>
               <li class="catalog-item">
                 <a href="blank.html">
@@ -171,6 +178,13 @@
                       alt="Барбершоп «Borodinski»">
                     </div>
                 </a>
+                  <div class="price-product">
+                    <h3>Barbershop</h3>
+                      <p>Сайт салона красоты<br>Для мужчин,да</p>
+                      <button class="button button-product" type="button"
+                      aria-label="Добавить сайт для «Barbershop» в корзину">
+                      <span class="button-product-text">9 900 руб</span></button>
+                  </div>
               </li>
               <li class="catalog-item">
                 <a href="blank.html">
@@ -184,6 +198,13 @@
                       alt="Милые штучки ручной работы для дома «Mishka»">
                     </div>
                 </a>
+                  <div class="price-product">
+                    <h3>Mishka</h3>
+                      <p>Интернет-магазин<br>вязанных игрушек</p>
+                      <button class="button button-product" type="button"
+                      aria-label="Добавить сайт для «Mishka» в корзину">
+                      <span class="button-product-text">9 900 руб</span></button>
+                  </div>
               </li>
               <li class="catalog-item">
                 <a href="blank.html">
@@ -197,6 +218,13 @@
                       alt="Учебный сайт «A+»">
                     </div>
                 </a>
+                <div class="price-product">
+                    <h3>A plus</h3>
+                      <p>Лендинг курсов повышения<br>квалификации</p>
+                      <button class="button button-product" type="button"
+                      aria-label="Добавить сайт для «A Plus» в корзину">
+                      <span class="button-product-text">9 900 руб</span></button>
+                  </div>
               </li>
               <li class="catalog-item">
                 <a href="blank.html">
@@ -210,6 +238,13 @@
                       alt="Крафтовый квас «Кваст»">
                     </div>
                 </a>
+                <div class="price-product">
+                    <h3>Кваст</h3>
+                      <p>Промо-сайт производителя<br>крафтового кваса</p>
+                      <button class="button button-product" type="button"
+                      aria-label="Добавить сайт для «Кваст» в корзину">
+                      <span class="button-product-text">9 900 руб</span></button>
+                  </div>
               </li>
             </ul>
             <ul class="pagination-list">
@@ -272,6 +307,29 @@
         </section>
       </div>
     </footer>
+
+    <section class="modal-user">
+      <h2>Напишите нам</h2>
+        <form class="modal-form" action="#" method="get">
+          <div class="appointment-form">
+            <p class="appointment-item">
+              <label for="appointment-name">Ваше имя:</label>
+              <input class="name-user" id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-email">Ваш email:</label>
+              <input class="mail-user" id="appointment-email" type="text" name="email" placeholder="email@example.com">
+            </p>
+            <p class="appointment-text">
+              <label for="appointment-letter">Текст письма:</label>
+              <input class="text-user" id="appointment-letter" type="text" name="name" placeholder="В свободной форме">
+            </p>
+          </div>
+            <input class="button button-form" type="submit" value="Отправить">
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </form>
+    </section>
+
 
     <script src="js/modal.js"></script>
 
